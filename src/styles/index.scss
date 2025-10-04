@@ -23,7 +23,7 @@ p {
 
 .catalog {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(1, $card-size);
   justify-content: center;
   gap: 48px 46px;
   padding: 50px 40px;
