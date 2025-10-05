@@ -10,18 +10,19 @@
   box-sizing: border-box;
   width: $card-size;
   border-radius: 5px;
-  border: 1px solid #f3f3f3;
+  border: 1px solid $card-border-color;
   text-align: center;
   padding: $spacing-base;
   padding-top: 32px;
-  transition: $transition;
+  transition: transform $transition;
 
   &:hover {
     transform: scale(1.2);
     z-index: 10;
 
-    h6 {
-      color: #34568b;
+    .card__title {
+      color: $title-hover-color;
+      transition: $transition;
     }
   }
 
@@ -29,7 +30,7 @@
     margin-bottom: 36px;
   }
 
-  h6,
+  &__title,
   p {
     text-align: left;
     letter-spacing: 0;
@@ -80,7 +81,7 @@
     border-radius: 5px;
     font-weight: 700;
     font-size: 14px;
-    transition: $transition;
+    transition: background-color $transition, color $transition, border-color $transition;
 
     &:hover {
       background-color: $whiteColor;

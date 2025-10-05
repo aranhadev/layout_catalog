@@ -25,8 +25,8 @@ p {
   display: grid;
   grid-template-columns: repeat(1, $card-size);
   justify-content: center;
-  gap: 48px 46px;
-  padding: 50px 40px;
+  gap: $catalog-gap;
+  padding: $catalog-padding;
   margin: 0 auto;
 
   @media (min-width: 488px) {
